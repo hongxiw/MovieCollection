@@ -123,14 +123,14 @@ public class MovieCollection {
 
     private void sortString(ArrayList<String> listToSort) {
         for (int j = 1; j < listToSort.size(); j++) {
-            String tempTitle = listToSort.get(j);
+            String tempString = listToSort.get(j);
 
             int possibleIndex = j;
-            while (possibleIndex > 0 && tempTitle.compareTo(listToSort.get(possibleIndex - 1)) < 0) {
+            while (possibleIndex > 0 && tempString.compareTo(listToSort.get(possibleIndex - 1)) < 0) {
                 listToSort.set(possibleIndex, listToSort.get(possibleIndex - 1));
                 possibleIndex--;
             }
-            listToSort.set(possibleIndex, tempTitle);
+            listToSort.set(possibleIndex, tempString);
         }
     }
 
